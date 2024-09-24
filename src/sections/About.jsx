@@ -5,7 +5,7 @@ const About = () => {
       <h2 className="sm:lg md:text-2xl mt-4">
         Software Engineer & Web Developer
       </h2>
-      <p className="text-[15px] font-semibold mt-2">
+      <p className="text-sm font-semibold mt-2">
         Hi!👋 I'm a web developer with expertise in both frontend and backend
         technologies, including React.js, Express.js, Tailwind CSS, HTML, CSS,
         and JavaScript. I currently work at a multinational corporation in a

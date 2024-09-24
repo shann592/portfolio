@@ -9,7 +9,7 @@ const Footer = () => {
           <FaGithub size="30px" />
         </div>
       </div>
-      <p className="mt-2 mb-5">
+      <p className="mt-2 mb-5 text-sm text-nowrap">
         &#169; {new Date().getFullYear()} Shantanu Singh. All rights reserved.{' '}
       </p>
     </footer>
