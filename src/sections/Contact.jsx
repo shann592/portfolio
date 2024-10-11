@@ -1,13 +1,47 @@
 import { useForm } from 'react-hook-form'
 import { contactSchemaResolver } from '../schemas/contactSchema'
 import ErrorText from '../components/ErrorText'
+import { toast } from 'react-toastify'
+import config from '../config/config'
+import { send } from 'emailjs-com'
 const Contact = () => {
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({ resolver: contactSchemaResolver })
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => {
+    const sendMessage = async () => {
+      try {
+        const messageData = {
+          from_name: data.name,
+          from_email: data.email,
+          message: data.message,
+        }
+
+        const resp = await send(
+          config.emailjsServiceID,
+          config.emailjsTemplateID,
+          messageData,
+          config.emailjsPublikKey
+        )
+
+        toast.success('Message sent 👍', {
+          position: 'top-right',
+          className: 'foo-bar',
+        })
+        reset()
+        // alert('Message Sent 👍')
+      } catch (error) {
+        toast.error('Cannot send the message 💥', {
+          position: 'top-right',
+          className: 'foo-bar',
+        })
+      }
+    }
+    sendMessage()
+  }
 
   return (
     <section className="w-[360px] md:w-[600px] mt-14">

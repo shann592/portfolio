@@ -7,6 +7,8 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import ResumeView from './components/ResumeView'
 import ViewResume from './components/ViewResume'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   const [showResume, setShowResume] = useState(false)
@@ -20,6 +22,7 @@ const App = () => {
       <Timeline />
       <Contact />
       <Footer />
+      <ToastContainer />
       {/* {showResume && } */}
     </div>
   )

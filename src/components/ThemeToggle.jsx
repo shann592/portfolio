@@ -20,7 +20,7 @@ const ThemeToggle = () => {
       <input
         type="checkbox"
         className="theme-controller"
-        checked={dark}
+        checked={!dark}
         onChange={handleChange}
       />
 
