@@ -56,10 +56,10 @@ export const projects = [
     githubLink: 'https://github.com/shann592/jobs-api',
   },
   {
-    demoLink: 'https://shann-portfolio-site.netlify.app',
-    projectName: 'Portfolio Site',
+    demoLink: 'https://shantanu-dev.netlify.app/',
+    projectName: 'Portfolio',
     projectImg: portfolioIcon,
-    techStackUsed: ['React', 'TailwindCSS'],
+    techStackUsed: ['React', 'TailwindCSS', 'DaisyUI'],
     githubLink: 'https://github.com/shann592/portfolio-site',
   },
 ]

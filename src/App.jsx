@@ -11,13 +11,11 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
-  const [showResume, setShowResume] = useState(false)
-
   return (
     <div className="flex flex-col gap-4 items-center p-16 w-full h-screen">
       {/* {showResume ? <ViewResume /> : <ThemeToggle />} */}
       <ThemeToggle />
-      <About setShowResume={setShowResume} />
+      <About />
       <Project />
       <Timeline />
       <Contact />

@@ -74,7 +74,7 @@ const Contact = () => {
         ></textarea>
         {errors?.message && <ErrorText text={errors.message.message} />}
         <div className="mt-4">
-          <button className="btn btn-primary btn-wide">Primary</button>
+          <button className="btn btn-primary btn-wide">Send</button>
         </div>
       </form>
     </section>
