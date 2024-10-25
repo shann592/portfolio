@@ -7,9 +7,14 @@ import dummy_ecomm from '../assets/project_images/dummy-ecomm-site.png'
 
 export const timelines = [
   {
+    year: '24-Present',
+    title: 'Senior Associate Consultant at Infosys',
+    text: 'Specializing in full-stack development with a focus on the React and Node.js ecosystem.',
+  },
+  {
     year: '2021-24',
     title: 'Project Engineer at Wipro',
-    text: 'I helped in developing and maintaining enterprise IT solution for international clients. Our tech stack consisted of JavaScript, Python, Documentum, Node.js and CMS (Staffbase).',
+    text: 'I helped in developing and maintaining enterprise IT solution for international clients. Our tech stack consisted of JavaScript, Node.js, React.js, Python and CMS (Staffbase).',
   },
   {
     year: '2020',

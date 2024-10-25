@@ -1,4 +1,3 @@
-import resume from '../assets/resume/resume.pdf'
 const About = () => {
   return (
     <section className="text-center w-[380px] md:w-[600px]">
@@ -8,13 +7,9 @@ const About = () => {
       </h2>
       <p className="text-sm font-semibold mt-2">
         Hi! 👋 I'm a Fullstack developer with expertise in Node.js and React.js.
-        I currently work at a multinational corporation, and in my free time, I
-        enjoy watching anime, reading manga, and exploring coding blogs. Please
-        feel free to check out my{' '}
-        <a className="text-lg italic underline" href={resume} download>
-          resume
-        </a>
-        .
+        I currently work at a multinational corporation as a developer, and in
+        my free time, I enjoy watching anime, reading manga, and exploring
+        coding blogs.
       </p>
     </section>
   )
